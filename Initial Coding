@@ -1,0 +1,13 @@
+#input prompts user for hours and rate information as a string
+hrs = input('Enter Hours:')
+rate = input('Enter Rate:')
+#float function converts the strings to float numbers
+h = float(hrs)
+r = float(rate)
+
+if h <= 40:
+    final_pay=(h*r)
+else: 
+   final_pay=((40*r)+((h-40)*(1.5*r)))
+
+print('Pay: ', final_pay)
